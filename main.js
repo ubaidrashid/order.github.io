@@ -1,11 +1,13 @@
+/**java first assignment**/
+
 
 //alert
 alert("welcome");
 
 // 2. Variables for Strings:
 
-var favouriteFood="fruits";
-console.log("favouriteFood",'=',favouriteFood);
+var favouriteFood = "fruits";
+console.log("favouriteFood", '=', favouriteFood);
 
 //3. Variables for Numbers:
 let num1 = 10;
@@ -61,16 +63,16 @@ let room4Rent = "Apartment";
 
 // illegal-variable
 // let user-score = 75;
- // SyntaxError: Unexpected token '-'
+// SyntaxError: Unexpected token '-'
 
 // Variable@Name
 // let user@name = "Alice";
- // SyntaxError: Unexpected token '@'
+// SyntaxError: Unexpected token '@'
 
 
 // 4:Math Expressions: Familiar Operators:
 
- // Define variables
+// Define variables
 let a = 10;
 let b = 5;
 let c = 3;
@@ -93,7 +95,7 @@ let y = x++; // post-increment: y is assigned the value of x (5) before x is inc
 console.log("Post-increment - x:", x); // Output: 6
 console.log("Post-increment - y:", y); // Output: 5
 
-let d= 10;
+let d = 10;
 let e = ++a; // pre-increment: a is incremented before assigning its value to b
 console.log("Pre-increment - d:", d); // Output: 11
 console.log("Pre-increment - e:", e); // Output: 11
@@ -101,8 +103,8 @@ console.log("Pre-increment - e:", e); // Output: 11
 
 // 7. Concatenating Text Strings:
 
-let firstName = "John";
-let lastName = "Doe";
+let firstName = prompt('firstName');
+let lastName = prompt('last name');
 
 let fullName = firstName + " " + lastName;
 
@@ -145,4 +147,106 @@ if (numericalGrade >= 90) {
     letterGrade = "F";
 }
 
+/**java third assignment**/
+
+// pop and push
+
 console.log("Your letter grade is: " + letterGrade);
+// Initial array of fruits
+var fruits = ["apple", "banana", "orange", "grape"];
+
+// Function to display available fruits
+console.log('fruits', fruits);
+
+console.log("customer purchase", fruits.pop());
+
+console.log('Available fruits', fruits);
+
+console.log("customer purchase", fruits.pop());
+
+console.log('Available fruits', fruits);
+
+newFruit = (prompt('enter a fruit name you want to add'));
+
+fruits.push(newFruit);
+
+console.log(newFruit, 'is added in stock');
+
+console.log('Available fruits', fruits);
+
+newFruit = (prompt('enter one more fruit name you want to add'));
+
+fruits.push(newFruit);
+console.log(newFruit, 'is added in stock');
+
+console.log('Available fruits', fruits);
+
+//shift and unshift
+
+var fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+
+console.log("current fruit in stock");
+
+console.log(fruits);
+
+console.log('A new shipment of fruits is arrived');
+
+console.log('newly arrived fruit is', fruits.shift());
+
+var newFruit = prompt('enter a name of fruit to add in stock');
+
+fruits.unshift(newFruit);
+
+console.log("updated fruits in stock")
+console.log(fruits)
+
+//splice
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log('current numbers of array');
+console.log(numbers);
+
+var start = prompt("enter the starting index of number you want to remove");
+
+var end = prompt("enter the ending index of number you want to remove");
+
+numbers.splice(start, end);
+
+console.log(numbers);
+
+//slice
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log("current numbers");
+console.log(numbers);
+
+var userNumber = prompt('enter a quantity of number you want to remove');
+
+numbers = numbers.slice(userNumber)
+
+console.log(numbers)
+var userNumbered = prompt('enter a quantity of number you want to remove');
+
+numbers = numbers.slice(userNumbered);
+
+console.log('numbers');
+
+console.log(numbers);
+
+//lenght
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var numbered = 0;
+
+for (var i = 0;i < numbers.length;i++) {
+
+    numbered += numbers[i];
+
+};
+
+var average = numbered / numbers.length;
+
+console.log("The average of the numbers is:", average);
