@@ -267,7 +267,8 @@ var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 var numbered = 0;
 
-for (var i = 0;i < numbers.length;i++) {
+
+for (var i = 0; i < numbers.length; i++) {
 
     numbered += numbers[i];
 
@@ -276,3 +277,40 @@ for (var i = 0;i < numbers.length;i++) {
 var average = numbered / numbers.length;
 
 console.log("The average of the numbers is:", average);
+
+//java 4th assignment
+
+// Q : 1
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+// Q : 2
+
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+    sum += i
+}
+console.log("Sum:", sum);
+
+// Q : 3
+
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+// Q : 4
+let num = 5
+console.log(`Multiplication table for ${num}:`)
+for (var i = 1; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`)
+}
+
+// Q : 5
+
+let star = "*"
+for (let i = 1; i <= 5; i++) {
+
+    console.log(star)
+    star+='*'
+}
